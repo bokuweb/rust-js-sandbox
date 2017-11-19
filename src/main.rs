@@ -9,7 +9,7 @@ fn main() {
 
 #[no_mangle]
 pub fn test() {
-    let mes = "hello";
+    let mes = vec!(89, 88);
     unsafe {
         hello_rust(mes.as_ptr(), mes.len());
     }
